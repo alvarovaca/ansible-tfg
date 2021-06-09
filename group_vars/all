@@ -12,6 +12,5 @@ dns_ip: 10.0.0.17
 apache_virt_ip: 10.0.0.200
 mariadb_virt_ip: 10.0.0.201
 
-timesyncd_server: es.pool.ntp.org
 hacluster_crypt_pass: $6$vs272OD3toORiva2$SNDSrdhEDPfWo28ZoTmrC21NWVxoueRfuYbatNGprsv.PY6KpOQEV/zYYsfiwGTWkCCVogEp3WSgFnA0I3b5J/
 hacluster_plain_pass: hacluster
