@@ -93,6 +93,7 @@
     - ceph-mon
     - ceph-osd
     - cryptsetup-bin
+    - dnsutils
     - gnupg
     - libbabeltrace1
     - libbinutils
