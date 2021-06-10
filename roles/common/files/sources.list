@@ -1,0 +1,3 @@
+deb http://ftp.cica.es/debian/ buster main
+deb http://ftp.cica.es/debian/ buster-updates main
+deb http://ftp.cica.es/debian-security/ buster/updates main
