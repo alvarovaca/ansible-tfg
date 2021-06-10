@@ -1,7 +1,17 @@
-- name: Copy sources.list file
-  copy:
-    src: files/sources.list
-    dest: /etc/apt/
+- name: Ensure apt does not use debian replica
+  lineinfile:
+    path: /etc/apt/sources.list
+    regexp: ".*debian.org.*"
+    state: absent
+
+- name: Ensure apt uses cica replica
+  lineinfile:
+    path: /etc/apt/sources.list
+    line: 'deb {{ item }} main'
+  loop:
+    - https://ftp.cica.es/debian/ buster
+    - https://ftp.cica.es/debian/ buster-updates
+    - https://ftp.cica.es/debian-security/ buster/updates
 
 - name: Ensure system is updated
   apt:
